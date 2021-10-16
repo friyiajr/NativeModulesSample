@@ -14,6 +14,9 @@
 		6172F2D35A4C3AA820D92908 /* libPods-GoingNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-GoingNative.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-GoingNative-GoingNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-GoingNative-GoingNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8BA25A3F27115A7C005CB9E3 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA25A3E27115A7C005CB9E3 /* SampleView.swift */; };
+		8BA25A4127115CD2005CB9E3 /* SampleComponentViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA25A4027115CD2005CB9E3 /* SampleComponentViewManager.swift */; };
+		8BA25A4327115DDB005CB9E3 /* SampleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA25A4227115DDB005CB9E3 /* SampleViewManager.m */; };
 		8BC1775E26FD710B0037F791 /* SampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1775D26FD710B0037F791 /* SampleModule.swift */; };
 		8BC1776026FD740C0037F791 /* SampleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC1775F26FD740C0037F791 /* SampleModule.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		6423831EA8574132BED9D8CC /* libPods-GoingNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoingNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-GoingNative-GoingNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoingNative-GoingNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-GoingNative-GoingNativeTests/Pods-GoingNative-GoingNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GoingNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BA25A3E27115A7C005CB9E3 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		8BA25A4027115CD2005CB9E3 /* SampleComponentViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleComponentViewManager.swift; sourceTree = "<group>"; };
+		8BA25A4227115DDB005CB9E3 /* SampleViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewManager.m; sourceTree = "<group>"; };
 		8BC1775C26FD710B0037F791 /* GoingNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoingNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		8BC1775D26FD710B0037F791 /* SampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModule.swift; sourceTree = "<group>"; };
 		8BC1775F26FD740C0037F791 /* SampleModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleModule.m; sourceTree = "<group>"; };
@@ -91,6 +97,7 @@
 		13B07FAE1A68108700A75B9A /* GoingNative */ = {
 			isa = PBXGroup;
 			children = (
+				8BA25A3D27115A4C005CB9E3 /* SampleView */,
 				8BC1775C26FD710B0037F791 /* GoingNative-Bridging-Header.h */,
 				8BC1775B26FD707F0037F791 /* SampleModule */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -142,6 +149,16 @@
 				00E356EE1AD99517003FC87E /* GoingNativeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA25A3D27115A4C005CB9E3 /* SampleView */ = {
+			isa = PBXGroup;
+			children = (
+				8BA25A3E27115A7C005CB9E3 /* SampleView.swift */,
+				8BA25A4027115CD2005CB9E3 /* SampleComponentViewManager.swift */,
+				8BA25A4227115DDB005CB9E3 /* SampleViewManager.m */,
+			);
+			name = SampleView;
 			sourceTree = "<group>";
 		};
 		8BC1775B26FD707F0037F791 /* SampleModule */ = {
@@ -426,8 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA25A3F27115A7C005CB9E3 /* SampleView.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				8BA25A4127115CD2005CB9E3 /* SampleComponentViewManager.swift in Sources */,
 				8BC1776026FD740C0037F791 /* SampleModule.m in Sources */,
+				8BA25A4327115DDB005CB9E3 /* SampleViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				8BC1775E26FD710B0037F791 /* SampleModule.swift in Sources */,
 			);
